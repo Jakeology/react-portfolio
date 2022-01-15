@@ -111,3 +111,13 @@ header h2 {
   padding: 15px 0;
   border-top: 1px solid #2e344e;
 }
+
+.navActive {
+  background-color: #ffb300;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.test {
+  text-align: center;
+}
