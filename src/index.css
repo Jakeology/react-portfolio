@@ -55,6 +55,24 @@ header h2 {
   overflow-y: auto;
 }
 
+.header-image {
+  padding: 20px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #2e344e;
+}
+
+.header-image a {
+  height: 200px;
+  width: 200px;
+  border-radius: 1000px;
+  border: 7px solid #2e344e;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .header-menu {
   width: 100%;
   padding: 15px 5px;
