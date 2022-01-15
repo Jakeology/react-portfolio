@@ -1,18 +1,24 @@
-function Nav() {
+import React from "react";
+
+function Nav(props) {
+  const { categories = [], setCurrentCategory, currentCategory } = props;
+
   return (
     <header>
       <h1>Jakeology.io</h1>
       <nav className="header-container">
         <ul className="header-menu">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">About</a>
-          </li>
-          <li>
-            <a href="/">Portfolio</a>
-          </li>
+          {categories.map((category) => (
+            <li className={`${currentCategory.name === category.name && `navActive`}`} key={category.name}>
+              <span
+                onClick={() => {
+                  setCurrentCategory(category);
+                }}
+              >
+                {category.name}
+              </span>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
