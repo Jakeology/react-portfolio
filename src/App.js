@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
+
+// Navigation Menu Components
 import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
   const [categories] = useState([
     { name: "Home", child: Home },
-    { name: "About" },
+    { name: "About", child: About },
     { name: "Portfolio" },
     { name: "Resume" },
     { name: "Contact" },
