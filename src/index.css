@@ -1,6 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
+  color: #445877;
+}
+
+body {
+  overflow: hidden !important;
+  font-size: 18px;
+  line-height: 1.8rem;
+  font-family: "Nunito", sans-serif;
   color: #a4acc4;
+  font-weight: 400;
+  background: #10121b;
 }
 
 header {
@@ -44,7 +62,7 @@ header h1 {
   display: block;
 }
 
-.header-menu li a {
+.header-menu li span {
   text-transform: uppercase;
   font-size: 0.94rem;
   letter-spacing: 1px;
