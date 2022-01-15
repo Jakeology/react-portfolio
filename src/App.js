@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 
 function App() {
   const [categories] = useState([
@@ -13,7 +14,7 @@ function App() {
     { name: "About", child: About },
     { name: "Portfolio", child: Portfolio },
     { name: "Resume", child: Resume },
-    { name: "Contact" },
+    { name: "Contact", child: Contact },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
