@@ -11,6 +11,10 @@ a {
   color: #445877;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   overflow: hidden !important;
   font-size: 18px;
@@ -34,9 +38,10 @@ header {
   transition: all 0.4s ease-out;
 }
 
-header h1 {
+header h2 {
   text-align: center;
   color: #a4acc4;
+  margin-top: 0.5em;
 }
 
 .header-container {

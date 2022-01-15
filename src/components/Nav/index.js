@@ -5,8 +5,13 @@ function Nav(props) {
 
   return (
     <header>
-      <h1>Jakeology.io</h1>
       <nav className="header-container">
+        <div className="header-image">
+          <a href="/">
+            <img alt="jake" src="/images/pfp.jpeg"></img>
+          </a>
+          <h2>Jacob Bartoletta</h2>
+        </div>
         <ul className="header-menu">
           {categories.map((category) => (
             <li className={`${currentCategory.name === category.name && `navActive`}`} key={category.name}>
