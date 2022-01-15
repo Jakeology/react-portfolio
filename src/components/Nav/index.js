@@ -2,7 +2,7 @@ function Nav() {
   return (
     <header>
       <h1>Jakeology.io</h1>
-      <nav>
+      <nav className="header-container">
         <ul>
           <li>
             <a href="/">Home</a>
