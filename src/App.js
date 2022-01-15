@@ -4,12 +4,13 @@ import Nav from "./components/Nav";
 // Navigation Menu Components
 import Home from "./components/Home";
 import About from "./components/About";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const [categories] = useState([
     { name: "Home", child: Home },
     { name: "About", child: About },
-    { name: "Portfolio" },
+    { name: "Portfolio", child: Portfolio },
     { name: "Resume" },
     { name: "Contact" },
   ]);
