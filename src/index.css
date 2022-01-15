@@ -8,7 +8,11 @@
 
 a {
   text-decoration: none;
-  color: #445877;
+  color: #a4acc4;
+}
+
+b {
+  font-weight: 900;
 }
 
 img {
@@ -96,4 +100,14 @@ header h2 {
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+
+.header-copyright {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1rem;
+  padding: 15px 0;
+  border-top: 1px solid #2e344e;
 }

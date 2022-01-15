@@ -25,6 +25,12 @@ function Nav(props) {
             </li>
           ))}
         </ul>
+        <p className="header-copyright">
+          &copy; 2022{" "}
+          <b>
+            <a href="/">Jakeology.io</a>
+          </b>
+        </p>
       </nav>
     </header>
   );
