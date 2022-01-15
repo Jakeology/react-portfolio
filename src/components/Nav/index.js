@@ -3,7 +3,7 @@ function Nav() {
     <header>
       <h1>Jakeology.io</h1>
       <nav className="header-container">
-        <ul>
+        <ul className="header-menu">
           <li>
             <a href="/">Home</a>
           </li>
