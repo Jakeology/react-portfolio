@@ -25,7 +25,13 @@ function App() {
     <div>
       <Nav categories={categories} setCurrentCategory={setCurrentCategory} currentCategory={currentCategory}></Nav>
       <main>
-        <ActiveChild />
+        <div className="container-xxl">
+          <div className="m-1 row">
+            <div className="col-12 col-xl-12">
+              <ActiveChild />
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );
