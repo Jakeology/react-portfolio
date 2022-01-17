@@ -353,6 +353,7 @@ header h2 {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
+  margin-bottom: 5em;
 }
 
 /* The actual timeline (the vertical ruler) */
