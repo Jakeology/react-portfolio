@@ -258,8 +258,5 @@ header h2 {
 .card-image:hover,
 .portfolio-card:hover .card-image {
   opacity: 0.2;
-}
-
-.card-image:hover {
   box-shadow: 0 0 15px rgb(255, 255, 255);
 }
