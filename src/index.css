@@ -188,3 +188,31 @@ header h2 {
 .about-me-bio p {
   font-size: 17px;
 }
+
+/* Portfolio primary container */
+.portfolio-primary {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+/* Portfolio images */
+.portfolio-card img {
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Portfolio cards */
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Portfolio card bio */
+.card-bio {
+  width: 16em;
+  margin: .25em;
+}
