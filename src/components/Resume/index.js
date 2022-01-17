@@ -83,6 +83,31 @@ function Resume() {
           </a>
         </span>
       </div>
+      <div className="experience pt-5 pb-5">
+        <h2>
+          <i class="fa-thin fa-briefcase"></i> Work Experience
+        </h2>
+      </div>
+      <div className="timeline pt-5">
+        <div className="timeline-container left">
+          <div className="content">
+            <h2>2017</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div className="timeline-container right">
+          <div className="content">
+            <h2>2016</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div className="timeline-container left">
+          <div className="content">
+            <h2>2017</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
