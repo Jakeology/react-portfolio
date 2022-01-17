@@ -244,11 +244,11 @@ header h2 {
   left: 55%;
   transform: translate(-55%, -55%);
   font-size: 36px;
-  margin: .25em;
+  margin-top: .4em;
 }
 
 .card-bio span a {
-  margin: .25em;
+  margin: .2em;
 }
 
 .portfolio-card:hover .card-bio {
@@ -258,4 +258,8 @@ header h2 {
 .card-image:hover,
 .portfolio-card:hover .card-image {
   opacity: 0.2;
+}
+
+.card-image:hover {
+  box-shadow: 0 0 15px rgb(255, 255, 255);
 }
