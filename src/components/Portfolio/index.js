@@ -5,34 +5,66 @@ function Portfolio() {
     <div className="portfolio-primary">
       <div className="cards">
         <div className="portfolio-card">
+          <img className="card-image" src="/images/calculator.png" alt="Calculator" />
           <div className="card-bio">
-            <img src="/images/calculator.png" alt="Calculator" />
             <h3>Calculator</h3>
             <p>React/CSS/JavaScript</p>
+            <span>
+              <a href="/">
+                <i class="fa-light fa-link"></i>
+              </a>
+              <a href="/">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <div className="portfolio-card">
+          <img className="card-image" src="/images/led-wall.jpg" alt="Led Wall" />
+          <div className="card-bio">
+            <h3>Led Wall</h3>
+            <p>Node.js/loT</p>
+            <span>
+              <a href="/">
+                <i class="fa-light fa-link"></i>
+              </a>
+              <a href="/">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </span>
           </div>
         </div>
 
         <article className="portfolio-card">
+          <img className="card-image" src="/images/moutain.png" alt="Moutain" />
           <div className="card-bio">
-            <img src="/images/led-wall.jpg" alt="Led Wall" />
-            <h3>Led Wall</h3>
-            <p>Node.js/loT</p>
-          </div>
-        </article>
-
-        <article className="portfolio-card">
-          <div className="card-bio">
-            <img src="/images/moutain.png" alt="Moutain" />
             <h3>Moutain</h3>
             <p>Surf Report</p>
+            <span>
+              <a href="/">
+                <i class="fa-light fa-link"></i>
+              </a>
+              <a href="/">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </span>
           </div>
         </article>
 
         <article className="portfolio-card">
+          <img className="card-image" src="/images/puzzle.jpg" alt="Pretzel Puzzle" />
           <div className="card-bio">
-            <img src="/images/puzzle.jpg" alt="Pretzel Puzzle" />
             <h3>Pretzel Puzzle</h3>
             <p>MERN Stack</p>
+            <span>
+              <a href="/">
+                <i class="fa-light fa-link"></i>
+              </a>
+              <a href="/">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </span>
           </div>
         </article>
       </div>

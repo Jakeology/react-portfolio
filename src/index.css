@@ -195,11 +195,15 @@ header h2 {
   padding-bottom: 50px;
 }
 
+.portfolio-card {
+  position: relative;
+}
+
 /* Portfolio images */
 .portfolio-card img {
   border-radius: 10px;
-  width: 100%;
-  opacity: 0.9;
+  width: 16em;
+  margin: 0.25em;
 }
 
 /* Portfolio cards */
@@ -213,6 +217,45 @@ header h2 {
 
 /* Portfolio card bio */
 .card-bio {
-  width: 16em;
+  text-align: center;
+  opacity: 0;
+}
+
+.card-bio h3 {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 35%;
+  transform: translate(-35%, -35%);
+}
+
+.card-bio p {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 45%;
+  transform: translate(-45%, -45%);
+}
+
+.card-bio span {
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  left: 55%;
+  transform: translate(-55%, -55%);
+  font-size: 36px;
   margin: .25em;
+}
+
+.card-bio span a {
+  margin: .25em;
+}
+
+.portfolio-card:hover .card-bio {
+  opacity: 1;
+}
+
+.card-image:hover,
+.portfolio-card:hover .card-image {
+  opacity: 0.2;
 }
