@@ -1,13 +1,531 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: white;
+}
+
+b {
+  font-weight: 900;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.8rem;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-weight: 400;
+  background-color: #0e0e23;
+}
+
+main {
+  margin-left: 300px;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  height: 100vh;
+  width: 300px;
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  /* border-right: 1px solid #2e344e; */
+  z-index: 10;
+  transition: all 0.4s ease-out;
+}
+
+header h2 {
+  text-align: center;
+  margin-top: 0.25em;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.header-image {
+  padding: 20px 0 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #2e344e;
+}
+
+.image-link {
+  height: 200px;
+  width: 200px;
+  border-radius: 1000px;
+  border: 2px solid #ffb300;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-menu {
+  width: 100%;
+  padding: 15px 5px;
+  margin-bottom: 0;
+}
+
+.header-menu li {
+  list-style: none;
+  text-align: center;
+  display: block;
+}
+
+.header-menu li span {
+  text-transform: uppercase;
+  font-size: 0.94rem;
+  letter-spacing: 1px;
+  display: block;
+  padding: 5px 0;
+  transition: all 0.4s ease-in;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.header-links {
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+.header-links i {
+  padding: 10px;
+  color: #3b4364;
+}
+
+.header-links i:hover {
+  color: #ffb300;
+}
+
+.header-copyright {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1rem;
+  padding: 15px 0;
+  border-top: 1px solid #2e344e;
+}
+
+.navActive {
+  background-color: #ffb300;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.primary-section-title {
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+  padding-top: 120px;
+}
+
+.primary-section-title h2 {
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.primary-section-title h2:after,
+.primary-section-title h2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  height: 5px;
+  border-radius: 100px;
+}
+
+.primary-section-title h2:before {
+  width: 100px;
+  background: #ffb3004d;
+}
+
+.primary-section-title h2:after {
+  width: 35px;
+  background: #ffb300;
+}
+
+.primary-section-title span {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 5.5rem;
+  line-height: 1;
+  font-weight: 900;
+  color: #2e344e7c;
+  display: inline-block;
+  text-transform: uppercase;
+  z-index: -1;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+
+.primary-section-title span a {
+  color: #ffb300;
+}
+
+.primary-section-title span h6 {
+  transform: translateX(85%);
+  font-size: 12px;
+  color: #ffb300;
+}
+
+.about-me-primary {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Main container for 'About Me' section */
+.about-me {
+  margin: 25px;
+  flex: 1;
+}
+
+.about-me img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 15px;
+}
+
+/* About me name */
+.about-me-bio h3 {
+  font-size: 28px;
+  margin: 20px;
+}
+
+/* About me bio container */
+.about-me-bio {
+  width: 100%;
+  text-align: center;
+}
+
+/* About me paragraph */
+.about-me-bio p {
+  font-size: 17px;
+}
+
+/* Portfolio primary container */
+.portfolio-primary {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.portfolio-card {
+  position: relative;
+}
+
+/* Portfolio images */
+.portfolio-card img {
+  border-radius: 10px;
+  width: 375px;
+  height: 375px;
+  margin: 1em;
+}
+
+/* Portfolio cards */
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Portfolio card bio */
+.card-bio {
+  text-align: center;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+
+.card-bio h3 {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 35%;
+  transform: translate(-35%, -35%);
+}
+
+.card-bio p {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 45%;
+  transform: translate(-45%, -45%);
+}
+
+.card-bio span {
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  left: 55%;
+  transform: translate(-55%, -55%);
+  font-size: 36px;
+  margin-top: 0.4em;
+}
+
+.card-bio span a {
+  margin: 0.2em;
+}
+
+.progress-title {
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.progress-inner {
+  display: flex;
+  align-items: center;
+}
+
+.progress-percentage {
+  flex: 0 0 60px;
+}
+
+.progress-container {
+  background: #2e344e;
+  display: block;
+  height: 6px;
+  width: 100%;
+  position: relative;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.padding-top {
+  padding-top: 120px;
+}
+
+.progress-active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #ffb300;
+  width: 0;
+  transition: all 1s cubic-bezier(0.01, 0.57, 0.68, 1.05) 0s;
+}
+
+.progress {
+  background-color: #2e344e;
+  width: 40em;
+  margin-top: 3em;
+}
+
+.progress-bar {
+  background-color: #037fff;
+}
+
+.portfolio-card:hover .card-bio {
+  opacity: 1;
+}
+
+.card-image:hover,
+.portfolio-card:hover .card-image {
+  opacity: 0.2;
+  box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.experience {
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #2e344e;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: #2e344e;
+  border: 2px solid #ffb300;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #13162f;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #13162f;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #13162f;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #13162f transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -13px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+  position: relative;
+  border-radius: 10px;
+}
+
+.form-field {
+  margin-top: 30px;
+  position: relative;
+}
+
+.form-field label {
+  position: absolute;
+  left: 15px;
+  top: -13px;
+  /* background: #0e0e23; */
+  transition: all 0.4s ease-out;
+  pointer-events: none;
+  padding: 0 10px;
+  font-size: 0.94rem;
+}
+
+.form-field input,
+.form-field textarea {
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.btn {
+  position: relative;
+  padding: 0 30px;
+  background: #037fff;
+  color: #fff;
+  border: 0;
+  display: inline-block;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  height: 50px;
+  line-height: 50px;
+  transition: all 0.4s ease-out;
+}
+
+button,
+input,
+select {
+  height: 50px;
+  padding: 0 15px;
+}
+
+textarea {
+  padding: 10px 15px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+button,
+input,
+select,
+textarea {
+  background: transparent;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
 }
