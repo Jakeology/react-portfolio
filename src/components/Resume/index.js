@@ -77,7 +77,7 @@ function Resume() {
         <h2>{resumeTitle}</h2>
         <span>
           {resumeTitle}{" "}
-          <a href="/images/resume.pdf" download>
+          <a href={require("../../assets/images/resume.pdf")} download>
             <i className="fa-duotone fa-file-arrow-down"></i>
             <h6>Download</h6>
           </a>
