@@ -7,17 +7,24 @@ function Contact() {
   const [errorMessage, setErrorMessage] = useState("");
 
   function handleChange(e) {
-    if (e.target.name === "email") {
+    if (e.target.name === "userEmail") {
       const isValid = validateEmail(e.target.value);
       // isValid conditional statement
       if (!isValid) {
         setErrorMessage("Your email is invalid.");
       } else {
-        if (!e.target.value.length) {
-          setErrorMessage(`${e.target.name} is required.`);
-        } else {
-          setErrorMessage("");
+        setErrorMessage("");
+      }
+    } else {
+      if (!e.target.value.length) {
+        if(e.target.name === "fullName") {
+          setErrorMessage("Please enter your full name");
         }
+        if(e.target.name === "userMessage") {
+          setErrorMessage("You can't send an empty message");
+        }
+      } else {
+        setErrorMessage("");
       }
     }
     if (!errorMessage) {
@@ -29,29 +36,41 @@ function Contact() {
     e.preventDefault();
     console.log(formState);
   }
+
+  const contactTitle = "contact me";
+
   return (
     <section>
-      <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+      <div className="primary-section-title">
+        <h2>{contactTitle}</h2>
+        <span>{contactTitle}</span>
+      </div>
+      <div className="row">
+        <div className="col-lg-6">
+          <form autoComplete="none" id="contact-form" onSubmit={handleSubmit}>
+            <div className="form-field">
+              <label htmlFor="fullName">Full Name*</label>
+              <input type="text" defaultValue={name} onBlur={handleChange} autoComplete="none" name="fullName"/>
+            </div>
+            <div className="form-field">
+              <label htmlFor="userEmail">Email*</label>
+              <input type="email" defaultValue={email} onBlur={handleChange} autoComplete="none" name="userEmail"/>
+            </div>
+            <div className="form-field">
+              <label htmlFor="userMessage">Message*</label>
+              <textarea autoComplete="none" defaultValue={message} onBlur={handleChange} rows="5" name="userMessage"/>
+            </div>
+            {errorMessage && (
+              <div>
+                <p className="error-text">{errorMessage}</p>
+              </div>
+            )}
+            <button className="btn mt-30" type="submit">
+              Submit
+            </button>
+          </form>
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button type="submit">Submit</button>
-      </form>
+      </div>
     </section>
   );
 }
