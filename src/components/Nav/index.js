@@ -8,7 +8,7 @@ function Nav(props) {
       <nav className="header-container">
         <div className="header-image">
           <a className="image-link" href="/">
-            <img alt="jake" src="/images/pfp.jpeg"></img>
+            <img alt="jake" src={require("../../assets/images/pfp.jpeg")}></img>
           </a>
           <div className="header-links">
             <a href="https://github.com/Jakeology" target="_blank" rel="noreferrer">
