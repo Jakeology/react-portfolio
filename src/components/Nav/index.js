@@ -12,13 +12,13 @@ function Nav(props) {
           </a>
           <div className="header-links">
             <a href="https://github.com/Jakeology" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/jacob-bartoletta-9b1566216/" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
             <a href="https://stackoverflow.com/users/16644863/jacob-b" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-stack-overflow"></i>
+              <i className="fa-brands fa-stack-overflow"></i>
             </a>
           </div>
         </div>
