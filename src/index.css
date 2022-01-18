@@ -235,8 +235,9 @@ header h2 {
 /* Portfolio images */
 .portfolio-card img {
   border-radius: 10px;
-  width: 16em;
-  margin: 0.25em;
+  width: 375px;
+  height: 375px;
+  margin: 1em;
 }
 
 /* Portfolio cards */
