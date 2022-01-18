@@ -20,10 +20,10 @@ function Portfolio() {
               <p>React/CSS/JavaScript</p>
               <span>
                 <a href="/">
-                  <i class="fa-light fa-link"></i>
+                  <i className="fa-light fa-link"></i>
                 </a>
                 <a href="/">
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
               </span>
             </div>
@@ -36,10 +36,10 @@ function Portfolio() {
               <p>Node.js/loT</p>
               <span>
                 <a href="/">
-                  <i class="fa-light fa-link"></i>
+                  <i className="fa-light fa-link"></i>
                 </a>
                 <a href="/">
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
               </span>
             </div>
@@ -52,10 +52,10 @@ function Portfolio() {
               <p>Surf Report</p>
               <span>
                 <a href="/">
-                  <i class="fa-light fa-link"></i>
+                  <i className="fa-light fa-link"></i>
                 </a>
                 <a href="/">
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
               </span>
             </div>
@@ -68,10 +68,10 @@ function Portfolio() {
               <p>MERN Stack</p>
               <span>
                 <a href="/">
-                  <i class="fa-light fa-link"></i>
+                  <i className="fa-light fa-link"></i>
                 </a>
                 <a href="/">
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
               </span>
             </div>
