@@ -91,20 +91,20 @@ function Resume() {
       <div className="timeline pt-5">
         <div className="timeline-container left">
           <div className="content">
-            <h2>2016-2017</h2>
-            <p>Lorem ipsum..</p>
+            <h2>2020-Current</h2>
+            <p>Server @ First Watch</p>
           </div>
         </div>
         <div className="timeline-container right">
           <div className="content">
-            <h2>2015-2016</h2>
-            <p>Lorem ipsum..</p>
+            <h2>2015-2020</h2>
+            <p>Landscape Foreman @ Suncrest Gardens</p>
           </div>
         </div>
         <div className="timeline-container left">
           <div className="content">
-            <h2>2010-2015</h2>
-            <p>Lorem ipsum..</p>
+            <h2>1996-2015</h2>
+            <p>Was a kid and couldn't work</p>
           </div>
         </div>
       </div>
