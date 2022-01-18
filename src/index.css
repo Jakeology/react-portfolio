@@ -267,7 +267,7 @@ header h2 {
 .card-bio {
   text-align: center;
   opacity: 0;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .card-bio h3 {
@@ -298,6 +298,10 @@ header h2 {
 
 .card-bio span a {
   margin: 0.2em;
+}
+
+.card-bio span a:hover {
+  color:#ffb300;
 }
 
 .progress-title {
@@ -483,7 +487,7 @@ header h2 {
 .btn {
   position: relative;
   padding: 0 30px;
-  background: #037fff;
+  background: #ffb300;
   color: #fff;
   border: 0;
   display: inline-block;
@@ -528,4 +532,23 @@ textarea {
 textarea:focus,
 input:focus {
   outline: none;
+}
+
+.contact-info {
+  height: 150px;
+  margin: 1.5em;
+  border-radius: 10px;
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px; 
+  min-width: 15em;
+}
+
+.contact-info i {
+  font-size: 26px;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 50px;
+  border: 2px solid #ffb300;
 }
