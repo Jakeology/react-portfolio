@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Nav from "./components/Nav";
 
 // Navigation Menu Components
-import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
@@ -10,7 +9,6 @@ import Contact from "./components/Contact";
 
 function App() {
   const [categories] = useState([
-    { name: "Home", child: Home },
     { name: "About", child: About },
     { name: "Portfolio", child: Portfolio },
     { name: "Resume", child: Resume },
