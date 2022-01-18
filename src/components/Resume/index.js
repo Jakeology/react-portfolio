@@ -85,25 +85,25 @@ function Resume() {
       </div>
       <div className="experience pt-5 pb-5">
         <h2>
-          <i class="fa-thin fa-briefcase"></i> Work Experience
+          <i className="fa-thin fa-briefcase"></i> Work Experience
         </h2>
       </div>
       <div className="timeline pt-5">
         <div className="timeline-container left">
           <div className="content">
-            <h2>2017</h2>
+            <h2>2016-2017</h2>
             <p>Lorem ipsum..</p>
           </div>
         </div>
         <div className="timeline-container right">
           <div className="content">
-            <h2>2016</h2>
+            <h2>2015-2016</h2>
             <p>Lorem ipsum..</p>
           </div>
         </div>
         <div className="timeline-container left">
           <div className="content">
-            <h2>2017</h2>
+            <h2>2010-2015</h2>
             <p>Lorem ipsum..</p>
           </div>
         </div>
