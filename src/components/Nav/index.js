@@ -5,6 +5,9 @@ function Nav(props) {
 
   return (
     <header>
+      <button className="header-toggler">
+        <i className="fa-solid fa-bars"></i>
+      </button>
       <nav className="header-container">
         <div className="header-image">
           <a className="image-link" href="/">

@@ -131,6 +131,24 @@ header h2 {
   border-top: 1px solid #2e344e;
 }
 
+.header-toggler {
+  position: absolute;
+  left: 100%;
+  top: 35px;
+  padding: 0;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  font-size: 2rem;
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
 .navActive {
   background-color: #ffb300;
   color: rgb(0, 0, 0);
@@ -149,6 +167,7 @@ header h2 {
   position: relative;
   padding-bottom: 15px;
   text-transform: uppercase;
+  font-size: 36px;
 }
 
 .primary-section-title h2:after,
@@ -185,6 +204,7 @@ header h2 {
   z-index: -1;
   transform: translateY(-50%);
   white-space: nowrap;
+  width: 100%;
 }
 
 .primary-section-title span a {
@@ -301,7 +321,7 @@ header h2 {
 }
 
 .card-bio span a:hover {
-  color:#ffb300;
+  color: #ffb300;
 }
 
 .progress-title {
@@ -541,7 +561,7 @@ input:focus {
   background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
   text-align: center;
   vertical-align: middle;
-  line-height: 70px; 
+  line-height: 70px;
   min-width: 15em;
 }
 
@@ -551,4 +571,95 @@ input:focus {
   margin-top: 20px;
   border-radius: 50px;
   border: 2px solid #ffb300;
+}
+
+@media only screen and (max-width: 1199px) {
+  header {
+    transform: translateX(-100%);
+  }
+
+  .header-toggler {
+    display: flex;
+  }
+
+  main {
+    margin-left: 0px;
+  }
+
+  .primary-section-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .primary-section-title h2 {
+    transform: translateY(15%);
+  }
+
+  .primary-section-title span {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about-me img {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me img {
+    width: 70%;
+  }
+
+  .primary-section-title {
+    margin-bottom: 45px;
+  }
+
+  .primary-section-title h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    transform: translateY(30%);
+  }
+
+  .primary-section-title span {
+    font-size: 4.5rem;
+    transform: translateY(-40%);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .about-me img {
+    width: 100%;
+  }
+
+  .primary-section-title h2 {
+    font-size: 28px;
+    padding-bottom: 5px;
+    transform: translateY(30%);
+  }
+
+  .primary-section-title span {
+    font-size: 3.5rem;
+    transform: translateY(-38%);
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  .primary-section-title {
+    margin-bottom: 25px;
+  }
+
+  .primary-section-title h2 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    transform: translateY(30%);
+  }
+
+  .primary-section-title span {
+    font-size: 2rem;
+    transform: translateY(-38%);
+  }
+
 }
