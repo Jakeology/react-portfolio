@@ -11,7 +11,7 @@ function About() {
       </div>
       <div className="about-me-primary">
         <article className="about-me">
-          <img src="/images/placeholder.png" alt="Male Placeholder" />
+          <img src="/images/pfp.jpeg" alt="Male Placeholder" />
           <div className="about-me-bio">
             <h3>Jacob Bartoletta</h3>
 
