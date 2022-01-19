@@ -32,24 +32,28 @@ main {
   margin-left: 300px;
 }
 
-header {
+header h2 {
+  text-align: center;
+  margin-top: 0.25em;
+}
+
+.nav-menu {
   position: fixed;
   left: 0;
   top: 0;
-  transform: translateX(0);
   height: 100vh;
   width: 300px;
   background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
-  /* border-right: 1px solid #2e344e; */
   z-index: 10;
   transition: all 0.4s ease-out;
+  display: flex;
+  justify-content: center;
 }
 
-header h2 {
-  text-align: center;
-  margin-top: 0.25em;
+.nav-menu.active {
+  transform: translateX(0);
 }
 
 .header-container {
@@ -134,19 +138,24 @@ header h2 {
 .header-toggler {
   position: absolute;
   left: 100%;
-  top: 35px;
+  top: 20px;
   padding: 0;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
   text-align: center;
   font-size: 2rem;
-  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   display: none;
+}
+
+.header-toggler.btn-left {
+  left: 80%;
+  background: transparent;
 }
 
 .navActive {
@@ -561,8 +570,7 @@ input:focus {
   background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
   text-align: center;
   vertical-align: middle;
-  line-height: 70px;
-  min-width: 15em;
+  line-height: 55px;
 }
 
 .contact-info i {
@@ -573,9 +581,14 @@ input:focus {
   border: 2px solid #ffb300;
 }
 
+.contact-info p {
+  font-size: 26px;
+}
+
 @media only screen and (max-width: 1199px) {
-  header {
+  .nav-menu {
     transform: translateX(-100%);
+    width: 250px;
   }
 
   .header-toggler {
@@ -589,6 +602,7 @@ input:focus {
   .primary-section-title {
     display: flex;
     justify-content: center;
+    padding-top: 60px;
   }
 
   .primary-section-title h2 {
@@ -598,6 +612,7 @@ input:focus {
   .primary-section-title span {
     text-align: center;
   }
+  
 }
 
 @media only screen and (max-width: 900px) {
@@ -753,5 +768,9 @@ input:focus {
 
   .card-bio span {
     font-size: 24px;
+  }
+
+  .contact-info p {
+    font-size: 18px;
   }
 }

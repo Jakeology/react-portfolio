@@ -70,14 +70,14 @@ function Contact() {
             </button>
           </form>
         </div>
-        <div className="col-lg-4">
+        <div className="col-lg-5">
           <div className="contact-info">
             <i className="fa-solid fa-phone"></i>
-            <h3>555-123-4567</h3>
+            <p>555-123-4567</p>
           </div>
           <div className="contact-info">
             <i className="fa-solid fa-envelope"></i>
-            <h4>xxjakexx14@gmail.com</h4>
+            <p>xxjakexx14@gmail.com</p>
           </div>
         </div>
       </div>
