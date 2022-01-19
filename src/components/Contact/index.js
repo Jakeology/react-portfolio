@@ -17,10 +17,10 @@ function Contact() {
       }
     } else {
       if (!e.target.value.length) {
-        if(e.target.name === "fullName") {
+        if (e.target.name === "fullName") {
           setErrorMessage("Please enter your full name");
         }
-        if(e.target.name === "userMessage") {
+        if (e.target.name === "userMessage") {
           setErrorMessage("You can't send an empty message");
         }
       } else {
@@ -50,15 +50,15 @@ function Contact() {
           <form autoComplete="none" id="contact-form" onSubmit={handleSubmit}>
             <div className="form-field">
               <label htmlFor="fullName">Full Name*</label>
-              <input type="text" defaultValue={name} onBlur={handleChange} autoComplete="none" name="fullName"/>
+              <input type="text" defaultValue={name} onBlur={handleChange} autoComplete="none" name="fullName" />
             </div>
             <div className="form-field">
               <label htmlFor="userEmail">Email*</label>
-              <input type="email" defaultValue={email} onBlur={handleChange} autoComplete="none" name="userEmail"/>
+              <input type="email" defaultValue={email} onBlur={handleChange} autoComplete="none" name="userEmail" />
             </div>
             <div className="form-field">
               <label htmlFor="userMessage">Message*</label>
-              <textarea autoComplete="none" defaultValue={message} onBlur={handleChange} rows="5" name="userMessage"/>
+              <textarea autoComplete="none" defaultValue={message} onBlur={handleChange} rows="5" name="userMessage" />
             </div>
             {errorMessage && (
               <div>
@@ -69,6 +69,16 @@ function Contact() {
               Submit
             </button>
           </form>
+        </div>
+        <div className="col-lg-5">
+          <div className="contact-info">
+            <i className="fa-solid fa-phone"></i>
+            <p>555-123-4567</p>
+          </div>
+          <div className="contact-info">
+            <i className="fa-solid fa-envelope"></i>
+            <p>xxjakexx14@gmail.com</p>
+          </div>
         </div>
       </div>
     </section>

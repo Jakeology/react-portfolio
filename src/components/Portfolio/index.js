@@ -13,7 +13,7 @@ function Portfolio() {
       <div className="portfolio-primary">
         <div className="cards">
           <div className="portfolio-card">
-            <img className="card-image" src="/images/run-buddy.png" alt="Run Buddy" />
+            <img className="card-image" src={require("../../assets/images/run-buddy.png")} alt="Run Buddy" />
             <div className="card-bio">
               <h3>Run Buddy</h3>
               <p>HTML • CSS</p>
@@ -29,7 +29,7 @@ function Portfolio() {
           </div>
 
           <div className="portfolio-card">
-            <img className="card-image" src="/images/scheduler.png" alt="Work Scheduler" />
+            <img className="card-image" src={require("../../assets/images/scheduler.png")} alt="Work Scheduler" />
             <div className="card-bio">
               <h3>Work Scheduler</h3>
               <p>HTML • CSS • JavaScript</p>
@@ -45,7 +45,7 @@ function Portfolio() {
           </div>
 
           <article className="portfolio-card">
-            <img className="card-image" src="/images/safetravel.png" alt="Safe Travel" />
+            <img className="card-image" src={require("../../assets/images/safetravel.png")} alt="Safe Travel" />
             <div className="card-bio">
               <h3>Safe Travel</h3>
               <p>JavaScript • REST API</p>
@@ -61,7 +61,7 @@ function Portfolio() {
           </article>
 
           <article className="portfolio-card">
-            <img className="card-image" src="/images/tech-blog.png" alt="Tech Blog" />
+            <img className="card-image" src={require("../../assets/images/tech-blog.png")} alt="Tech Blog" />
             <div className="card-bio">
               <h3>Tech Blog</h3>
               <p>NodeJS • Sequelize • HandlebarsJS</p>
@@ -77,7 +77,7 @@ function Portfolio() {
           </article>
 
           <article className="portfolio-card">
-            <img className="card-image" src="/images/paws-n-play.png" alt="Paws n Play" />
+            <img className="card-image" src={require("../../assets/images/paws-n-play.png")} alt="Paws n Play" />
             <div className="card-bio">
               <h3>Tech Blog</h3>
               <p>ExpressJS • Sequelize • HandlebarsJS</p>
@@ -93,7 +93,7 @@ function Portfolio() {
           </article>
 
           <article className="portfolio-card">
-            <img className="card-image" src="/images/budget-tracker.png" alt="Budget Tracker" />
+            <img className="card-image" src={require("../../assets/images/budget-tracker.png")} alt="Budget Tracker" />
             <div className="card-bio">
               <h3>Budget Tracker</h3>
               <p>ExpressJS • Mongoose • MongoDB</p>
